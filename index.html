@@ -76,11 +76,13 @@
 			<div class="b-optimization">
 			<img class="arrow" src="i/arrow-1.png">
 				<h3>Закажите продвижение сайта у нас и получите оптимизацию <b>в ПОДАРОК!</b></h3>
-				<form class="b-form clearfix">
+				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2" class="b-form clearfix" >
 					<input type="text" class="name left" id="name" name="name" required="" placeholder="Имя">
 					<input type="text" class="phone left" id="phone" name="phone" required="" placeholder="Телефон">
 					<input type="text" class="email left" id="email" name="email" required="" placeholder="Email">
-					<input type="text" class="site left" id="site" name="site" required="" placeholder="Ваш сайт">
+					<input type="text" class="site left" id="site" name="1" placeholder="Ваш сайт">
+					<input type="hidden" name="1-name" value="Сайт"/>
+					<input type="hidden" name="subject" value="Заказ на расчет"/>
 					<input type="submit" class="ajax b-orange-butt left" value="Получить подарок">
 				</form>
 			</div>
@@ -400,12 +402,14 @@
 			<div class="b-rezults">
 			<img class="arrow" src="i/arrow-1.png">
 				<h3>хотите такие же результаты?</h3>
-				<form class="b-form clearfix">
+				<form action="kitsend.php" method="POST" id="b-form-2" data-block="#b-popup-2" class="b-form clearfix">
 					<input type="text" class="name left" id="name" name="name" required="" placeholder="Имя">
 					<input type="text" class="phone left" id="phone" name="phone" required="" placeholder="Телефон">
 					<input type="text" class="email left" id="email" name="email" required="" placeholder="Email">
-					<input type="text" class="site left" id="site" name="site" required="" placeholder="Ваш сайт">
-					<button type="submit" class="b-orange-butt left">Получить<br>бесплатный расчет</button>
+					<input type="text" class="site left" id="site" name="1" placeholder="Ваш сайт">
+					<input type="hidden" name="1-name" value="Сайт"/>
+					<input type="hidden" name="subject" value="Заказ на расчет"/>
+					<button type="submit" class="ajax b-orange-butt left">Получить<br>бесплатный расчет</button>
 				</form>
 			</div>
 		</div>
@@ -420,8 +424,8 @@
 	</div>
 	<div class="b b-8">
 		<div class="b-block">
-			<img class="balloon" src="i/balloon-2.png">
-			<img class="balloon-shadow" src="i/balloon-2-shadow.png">
+			<img class="balloon" data-stellar-ratio="1.1" src="i/balloon-2.png">
+			<img class="balloon-shadow" data-stellar-ratio="1.14" src="i/balloon-2-shadow.png">
 			<ul class="clearfix">
 				<li class="left">
 					<div class="clearfix">
@@ -496,12 +500,15 @@
 				<div class="b-ipad anim slideRight" data-anim="slideRight" data-offset="350">
 					<div class="b-orange-block">
 						<h3>Просчитать бюджет</h3>
-						<form>
+						<form action="kitsend.php" method="POST" id="b-form-3" data-block="#b-popup-2">
 							<input type="text" class="name" id="name" name="name" required="" placeholder="Имя">
 							<input type="text" class="phone" id="phone" name="phone" required="" placeholder="Телефон">
 							<input type="text" class="email" id="email" name="email" required="" placeholder="Email">
-							<input type="text" class="site" id="site" name="site" required="" placeholder="Ваш сайт">
-							<textarea>Запросы</textarea>
+							<input type="text" class="site" id="site" name="1" placeholder="Ваш сайт">
+							<textarea name="2">Запросы</textarea>
+							<input type="hidden" name="1-name" value="Сайт"/>
+							<input type="hidden" name="2-name" value="Запросы"/>
+							<input type="hidden" name="subject" value="Заказ на расчет"/>
 							<input type="submit" class="ajax" value="отправить">
 						</form>
 					</div>
@@ -573,12 +580,14 @@
 			<div class="b-optimization">
 			<img class="arrow" src="i/arrow-1.png">
 			<h3>Хотите такие же результаты?</h3>
-				<form class="b-form clearfix">
+				<form action="kitsend.php" method="POST" id="b-form-4" data-block="#b-popup-2" class="b-form clearfix">
 					<input type="text" class="name left" id="name" name="name" required="" placeholder="Имя">
 					<input type="text" class="phone left" id="phone" name="phone" required="" placeholder="Телефон">
 					<input type="text" class="email left" id="email" name="email" required="" placeholder="Email">
-					<input type="text" class="site left" id="site" name="site" required="" placeholder="Ваш сайт">
-					<button class="b-orange-butt left">Получить<br> бесплатный расчет</button>
+					<input type="text" class="site left" id="site" name="1" placeholder="Ваш сайт">
+					<input type="hidden" name="1-name" value="Сайт"/>
+					<input type="hidden" name="subject" value="Заказ на расчет"/>
+					<button class="b-orange-butt left ajax">Получить<br> бесплатный расчет</button>
 				</form>
 			</div>
 		</div>
@@ -595,8 +604,8 @@
 			</div>
 		</div>
 	</div>
-<div style="display:none;">
-	<div id="b-popup-1">
+	<div style="display:none;">
+		<!-- <div id="b-popup-1">
 			<div class="for_all b-popup" >
 				<h3>Оставьте заявку</h3>
 				<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
@@ -611,7 +620,7 @@
 					</div>
 				</form>
 			</div>
-		</div>
+		</div> -->
 		<div id="b-popup-2">
 			<div class="b-thanks b-popup">
 				<h3>Спасибо!</h3>

@@ -112,8 +112,10 @@ label.error{
 	display: none !important;
 }
 input.error,textarea.error{
-	background-color: #FFCECE !important;
-	box-shadow: 0 1px 2px rgba(180, 14, 14, 0.57);
+	/*background-color: #FFCECE !important;*/
+	border: 1px solid #F00 !important;
+	box-shadow: 0px 0px 0px 1px #F00;
+	/*box-shadow: 0 1px 2px rgba(180, 14, 14, 0.57);*/
 }
 h2{
 	color: #B8B7B7;
@@ -188,8 +190,9 @@ input:-moz-placeholder {
 	text-transform: uppercase;
 }
 	.b-orange-butt:hover{
-		background-color: #ff1800;
+		background-color: #EE4100;
 		cursor: pointer;
+		border-color: #C23500;
 	}
 		.b-orange-butt:active{
 			position: relative;
@@ -340,24 +343,24 @@ input:-moz-placeholder {
 					border-radius: 5px;
 					color: #464646;
 					font-family: "robotolight";
-					font-size: 17px;
-					padding: 6px 0px 6px 38px;
-					margin-right: 25px;
+					font-size: 16px;
+					padding: 6px 4px 7px 38px;
+  					margin-right: 22px;
 				}
 					.b-form .name{
 						background-image: url("../i/name.jpg");
 						background-repeat: no-repeat;
-						background-position: 8px 2px;
+						background-position: 7px 3px;
 					}
 					.b-form .phone{
 						background-image: url("../i/phone.jpg");
 						background-repeat: no-repeat;
-						background-position: 4px 2px;
+						background-position: 2px 2px;
 					}
 					.b-form .email{
 						background-image: url("../i/mail.jpg");
 						background-repeat: no-repeat;
-						background-position: 2px 2px;
+						background-position: 1px 3px;
 					}
 					.b-form .site{
 						background-image: url("../i/site.png");
@@ -811,7 +814,7 @@ input:-moz-placeholder {
 				margin-bottom: 5px;
 			}
 				.b-6 .b-form button{
-					padding: 1.5px 36px;
+					padding: 2px 36px;
 					line-height: 15px;
 					color: #FFF;
 					font-family: "robotoregular";
@@ -911,14 +914,13 @@ input:-moz-placeholder {
 				}
 		.b-8 .balloon{
 			position: absolute;
-			top: 7px;
+			top: -100px;
 			right: -383px;
 			z-index: 2
 		}
 		.b-8 .balloon-shadow{
 			position: absolute;
-			position: absolute;
-			top: 24px;
+			top: -154px;
 			right: -358px;
 			z-index: 1;
 		}
@@ -1215,7 +1217,7 @@ input:-moz-placeholder {
 		left: 713px;
 	}
 	.b-14 button{
-			padding: 1.5px 36px;
+			padding: 2px 36px;
 			line-height: 15px;
 			color: #FFF;
 			font-family: "robotoregular";
