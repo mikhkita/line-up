@@ -20,7 +20,27 @@ $(document).ready(function(){
         horizontalScrolling: false,
         positionProperty: 'transform'
     });
+
+    $('.b-slider-cont').slick({
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 7000,
+    });
+
+    $(".arrow-left").click(function(){
+        $(".slick-prev").trigger("click");
+        return false;
+    });
     
+    $(".arrow-right").click(function(){
+        $(".slick-next").trigger("click");
+        return false;
+    });
+
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,
