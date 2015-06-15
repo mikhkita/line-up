@@ -192,8 +192,29 @@ input:-moz-placeholder {
 		cursor: pointer;
 	}
 		.b-orange-butt:active{
-			
+			position: relative;
+			margin-top: 2px;
+			border-bottom: none;
 		}
+.b-orange-button{
+	background-color: #ff6d20;
+	border-radius: 5px;
+	border: none;
+	border-bottom: 2px solid #f56448;
+	color: #FFF;
+	font-family: "robotoregular";
+	font-size: 15px;
+	text-transform: uppercase;
+}
+	.b-orange-button:hover{
+		background-color: #ff1800;
+		cursor: pointer;
+	}
+		.b-orange-button:active{
+			position: relative;
+			top: 2px;
+			border-bottom: none;
+		}	
 .b-0{
 
 }
@@ -234,7 +255,7 @@ input:-moz-placeholder {
 						}
 			.b-0 .b-call{
 				margin-top: 11px;
-				margin-bottom: 55px;
+				margin-bottom: 50px;
 			}	
 				.b-0 .b-call a{
 					padding: 4px 12px;
@@ -313,41 +334,40 @@ input:-moz-placeholder {
 
 			}
 				.b-form input[type="text"]{
-					width: 158px;
+					width: 140px;
 					background-color: #FFF;
 					border: 1px solid #7B7B7B;
 					border-radius: 5px;
-					text-align: center;
 					color: #464646;
 					font-family: "robotolight";
 					font-size: 17px;
-					padding: 5.5px 10px;
+					padding: 6px 0px 6px 38px;
 					margin-right: 21px;
 				}
 					.b-form .name{
 						background-image: url("../i/name.jpg");
 						background-repeat: no-repeat;
-						background-position: 10px 2px;
+						background-position: 8px 2px;
 					}
 					.b-form .phone{
 						background-image: url("../i/phone.jpg");
 						background-repeat: no-repeat;
-						background-position: 10px 2px;
+						background-position: 4px 2px;
 					}
 					.b-form .email{
 						background-image: url("../i/mail.jpg");
 						background-repeat: no-repeat;
-						background-position: 10px 2px;
+						background-position: 2px 2px;
 					}
 					.b-form .site{
 						background-image: url("../i/site.png");
 						background-repeat: no-repeat;	
-						background-position: 10px 9px;					
+						background-position: 9px 9px;					
 					}
 				.b-form input[type="submit"]{
 					padding: 8px 34px;
 					position: relative;
-					top: -2px;
+					top: -3px;
 				}
 .b-3{
 
@@ -536,6 +556,7 @@ input:-moz-placeholder {
 				width: 1050px;
 				height: 515px;
 				position: relative;
+				background-color: #FFF;
 			}
 				.b-5 .b-back .b-slider .graph{
 					background-image: url("../i/graph.jpg");
@@ -558,7 +579,7 @@ input:-moz-placeholder {
 						background-image: url("../i/b-3/arrow-left.png");
 						background-position: 50% 50%;
 						background-size: 44px;
-						padding-top: 74px;
+						margin-top: 37px;
 						margin-left: 19px;
 						background-repeat: no-repeat;
 					}
@@ -588,7 +609,7 @@ input:-moz-placeholder {
 						background-image: url("../i/b-3/arrow-right.png");
 						background-position: 50% 50%;
 						background-size: 44px;
-						padding-top: 74px;
+						margin-top: 37px;
 						margin-left: 82px;
 						background-repeat: no-repeat;
 					}
@@ -734,8 +755,6 @@ input:-moz-placeholder {
 				.b-6 .b-form button{
 					padding: 1.5px 36px;
 					line-height: 15px;
-					position: relative;
-					top: 4px;
 					color: #FFF;
 					font-family: "robotoregular";
 					font-size: 14px;
@@ -947,13 +966,12 @@ input:-moz-placeholder {
 					color: #464646;
 					font-family: "robotolight";
 					font-size: 17px;
-					text-align: center;
 					border: none;
 					border: 1px solid #7C7C7C;
 					border-radius: 5px;
-					width: 194px;
+					width: 216px;
 					background-repeat: no-repeat;
-					padding: 5px 30px;
+					padding: 5px 0px 5px 38px;
 					margin-bottom: 6px;
 				}
 				.b-10 .b-back .b-ipad form textarea{
@@ -971,23 +989,23 @@ input:-moz-placeholder {
 				}
 					.b-10 .b-back .b-ipad form .name{
 						background-image: url("../i/name.jpg");
-						background-position: 17px;
+						background-position: 10px;
 					}
 					.b-10 .b-back .b-ipad form .phone{
 						background-image: url("../i/phone.jpg");
-						background-position: 15px;
+						background-position: 5px;
 					}
 					.b-10 .b-back .b-ipad form .email{
 						background-image: url("../i/mail.jpg");
-						background-position: 13px;
+						background-position: 4px;
 					}
 					.b-10 .b-back .b-ipad form .site{
 						background-image: url("../i/site.png");
-						background-position: 20px;
+						background-position: 13px;
 					}
 					.b-10 .b-back .b-ipad form textarea{
 						background-image: url("../i/inquiry.png");
-						background-position: 25px 9px;
+						background-position: 16px 9px;
 					}
 				.b-10 .b-back .b-ipad form input[type="submit"]{
 					color: #FFF;
@@ -1001,6 +1019,12 @@ input:-moz-placeholder {
 					cursor: pointer;
 					background-color: rgba(255, 255, 255, 0.0);
 				}
+					.b-10 .b-back .b-ipad form input[type="submit"]:hover{
+						background-color: rgba(255, 255, 255, 0.3);
+					}
+					.b-10 .b-back .b-ipad form input[type="submit"]:active{
+						background-color: rgba(255, 255, 255, 0.2);
+					}
 .b-11{
 
 }
@@ -1119,20 +1143,18 @@ input:-moz-placeholder {
 	}
 	.b-14 img{
 		position: absolute;
-		top: 77px;
-		left: 737px;
+		top: 73px;
+		left: 732px;
 	}
 	.b-14 button{
 			padding: 1.5px 36px;
 			line-height: 15px;
-			position: relative;
-			top: 4px;
 			color: #FFF;
 			font-family: "robotoregular";
 			font-size: 14px;
 	}
 .b-15{
-	margin-bottom: 74px;
+	
 }
 	.b-15 .b-logo{
 		display: block;
@@ -1142,8 +1164,8 @@ input:-moz-placeholder {
 		background-position: 50% 50%;
 		background-size: 165px;
 		margin-top: 33px;
-		margin-left: -7px;
 		background-repeat: no-repeat;
+		margin-bottom: 40px;
 	}
 	.b-15 .b-politic{
 		margin-top: 49px;
@@ -1161,6 +1183,7 @@ input:-moz-placeholder {
 	.b-15 .b-phone{
 		margin-left: 188px;
 		margin-top: 28px;
+		text-align: right;
 	}
 		.b-15 .b-phone h4{
 			color: #ee4200;
