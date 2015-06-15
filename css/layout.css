@@ -425,7 +425,7 @@ input:-moz-placeholder {
 				left: -60px;
 			}
 .b-4{
-
+	
 }
 	.b-4 > .b-block{
 
@@ -434,6 +434,7 @@ input:-moz-placeholder {
 
 		}
 	.b-4 .b-back{
+		overflow: hidden;
 		background-color: #f1f1f1;
 	}
 		.b-4 .b-back .b-block{
