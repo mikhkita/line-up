@@ -14,6 +14,12 @@ $(document).ready(function(){
     }
     $(window).resize(resize);
     resize();
+
+    $(window).stellar({
+        hideDistantElements: false,
+        horizontalScrolling: false,
+        positionProperty: 'transform'
+    });
     
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
