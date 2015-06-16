@@ -23,14 +23,13 @@
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/jquery.stellar.js"></script>
-	<script type="text/javascript" src="js/carousel.lite.js"></script>
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="js/KitProgress.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
 	<script type="text/javascript" src="js/device.js"></script>
 	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </head>
@@ -47,12 +46,12 @@
 			</div>
 			<div class="b-menu left">
 				<ul class="clearfix">
-					<li class="left"><a href="#">Что такое продвижение?</a></li>
-					<li class="left"><a href="#">Почему мы?</a></li>
-					<li class="left"><a href="#">Наши кейсы</a></li>
-					<li class="left"><a href="#">О нас</a></li>
-					<li class="left"><a href="#">Наши клиенты</a></li>
-					<li class="left"><a href="#">Контакты</a></li>
+					<li class="left"><a href="#" class="b-go" data-block=".b-3">Что такое продвижение?</a></li>
+					<li class="left"><a href="#" class="b-go" data-block=".b-4">Почему мы?</a></li>
+					<li class="left"><a href="#" class="b-go" data-block=".b-5">Наши кейсы</a></li>
+					<li class="left"><a href="#" class="b-go" data-block=".b-7">О нас</a></li>
+					<li class="left"><a href="#" class="b-go" data-block=".b-12">Наши клиенты</a></li>
+					<li class="left"><a href="#" class="b-go" data-block=".b-13">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="b-call left">
@@ -74,7 +73,7 @@
 	<div class="b b-2">
 		<div class="b-block">
 			<div class="b-optimization">
-			<img class="arrow" src="i/arrow-1.png">
+			<img class="arrow b-mobile-arrow" src="i/arrow-1.png">
 				<h3>Закажите продвижение сайта у нас и получите оптимизацию <b>в ПОДАРОК!</b></h3>
 				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-2" class="b-form clearfix" >
 					<input type="text" class="name left" id="name" name="name" required="" placeholder="Имя">
@@ -100,7 +99,7 @@
 
 					Сравнительно небольшие затраты - низкие цены на контакт с ЦА. При качественном сео-продвижении - сайт в качестве рекламной площадки продолжает приносить вам клиентов еще долгое время.</p>
 				</div>
-				<div class="yandex"></div>
+				<div class="yandex anim slideDown" data-anim="slideDown" data-offset="300"></div>
 			</div>
 		</div>
 	</div>
@@ -400,7 +399,7 @@
 	<div class="b b-6">
 		<div class="b-block">
 			<div class="b-rezults">
-			<img class="arrow" src="i/arrow-1.png">
+			<img class="arrow b-mobile-arrow" src="i/arrow-1.png">
 				<h3>хотите такие же результаты?</h3>
 				<form action="kitsend.php" method="POST" id="b-form-2" data-block="#b-popup-2" class="b-form clearfix">
 					<input type="text" class="name left" id="name" name="name" required="" placeholder="Имя">
@@ -476,7 +475,7 @@
 		</div>
 		<div class="b-back">
 			<div class="b-block">
-				<div class="b-shield anim scaleOut" data-offset="400" data-anim="scaleOut">
+				<div class="b-shield anim scaleOut" data-offset="300" data-anim="scaleOut">
 					<div class="b-logo"></div>
 				</div>
 				<div class="clearfix">
@@ -497,7 +496,7 @@
 				<div class="b-white-block">
 					<p>Цены очень индивидуальны, зависят от ниши, региона, запросов... Всё верно, что минимальный бюджет от 15, чтобы кто попала не писал....</p>
 				</div>	
-				<div class="b-ipad anim slideRight" data-anim="slideRight" data-offset="350">
+				<div class="b-ipad anim slideRight" data-anim="slideRight" data-offset="250">
 					<div class="b-orange-block">
 						<h3>Просчитать бюджет</h3>
 						<form action="kitsend.php" method="POST" id="b-form-3" data-block="#b-popup-2">
@@ -505,7 +504,7 @@
 							<input type="text" class="phone" id="phone" name="phone" required="" placeholder="Телефон">
 							<input type="text" class="email" id="email" name="email" required="" placeholder="Email">
 							<input type="text" class="site" id="site" name="1" placeholder="Ваш сайт">
-							<textarea name="2">Запросы</textarea>
+							<textarea name="2" placeholder="Запросы"></textarea>
 							<input type="hidden" name="1-name" value="Сайт"/>
 							<input type="hidden" name="2-name" value="Запросы"/>
 							<input type="hidden" name="subject" value="Заказ на расчет"/>
@@ -570,15 +569,11 @@
 			</ul>
 		</div>
 	</div>
-	<div class="b b-13">
-		<div class="b-block">
-			
-		</div>
-	</div>
+	<div class="b b-13 anim getPip" data-anim="getPip" data-func="getPip" data-offset="430" id="map_canvas"></div>
 	<div class="b b-14">
 		<div class="b-block">
 			<div class="b-optimization">
-			<img class="arrow" src="i/arrow-1.png">
+			<img class="arrow b-mobile-arrow" src="i/arrow-1.png">
 			<h3>Хотите такие же результаты?</h3>
 				<form action="kitsend.php" method="POST" id="b-form-4" data-block="#b-popup-2" class="b-form clearfix">
 					<input type="text" class="name left" id="name" name="name" required="" placeholder="Имя">

@@ -89,7 +89,7 @@ body {
 	position: relative;
 }
 body {
-	min-width: 1000px;
+	min-width: 1100px;
 	text-align: center;
 	font-family: 'PFL';
 	overflow-x: hidden;
@@ -122,11 +122,11 @@ h2{
 	font-family: "robotobold";
 	font-size: 37px;
 	text-transform: uppercase;
-	margin-top: 76px;
+	padding-top: 76px;
 	margin-bottom: 68px;
 }
 .ps-lines{
-
+	display: none;
 }
 	.ps-lines li.v{
 		position: fixed;
@@ -173,11 +173,11 @@ h2{
 	left: 50%;
 	margin-left: -500px;
 }
-input::-webkit-input-placeholder {
-	color: #434343;
+input.error::-webkit-input-placeholder {
+	color: #F00;
 }
-input:-moz-placeholder {
-	color: #434343;
+input.error:-moz-placeholder {
+	color: #F00;
 }
 .b-orange-butt{
 	background-color: #ff6d20;
@@ -383,10 +383,11 @@ input:-moz-placeholder {
 			font-family: "robotobold";
 			font-size: 37px;
 			text-transform: uppercase;
-			margin-top: 74px;
+			padding-top: 74px;
 			margin-bottom: 70px;
 		}
 		.b-3 .b-back{
+			overflow: hidden;
 			background-image: url("../i/back-3.jpg");
 			background-size: cover;
 			background-position: 50% 50%;
@@ -448,7 +449,7 @@ input:-moz-placeholder {
 			}
 				.b-4 .man{
 					position: absolute;
-					top: 177px;
+					top: 247px;
 					left: -345px;
 				}
 				.b-4 .icons{
@@ -622,7 +623,7 @@ input:-moz-placeholder {
 				.b-5 .b-back .b-slider .graph{
 					background-image: url("../i/graph.jpg");
 					width: 429px;
-					height: 247px;
+					height: 248px;
 					background-size: 429px;
 					background-repeat: no-repeat;
 					background-position: 50% 50%;
@@ -643,7 +644,14 @@ input:-moz-placeholder {
 					background-position: 50% 50%;
 					background-size: 44px;
 					background-repeat: no-repeat;
+					opacity: 0.4;
 				}
+					.b-nav a:hover{
+						opacity: 1;
+					}
+					.b-nav a:active{
+						opacity: 0.5;
+					}
 					.b-5 .arrow-left{
 						left: 19px;
 						background-image: url("../i/b-3/arrow-left.png");
@@ -928,6 +936,7 @@ input:-moz-placeholder {
 
 }
 	.b-9 .b-back{
+		overflow: hidden;
 		background-color: #f1f1f1;
 	}
 		.b-9 .b-icons{
@@ -1104,7 +1113,7 @@ input:-moz-placeholder {
 		.b-11 .b-back .b-book{
 			width: 592px;
 			height: 421px;
-			background-image: url("../i/book.jpg");
+			background-image: url("../i/book.png");
 			margin-top: 102px;
 			margin-left: -23px;
 			background-repeat: no-repeat;
@@ -1153,7 +1162,7 @@ input:-moz-placeholder {
 			font-family: "robotobold";
 			font-size: 37px;
 			text-transform: uppercase;
-			margin-top: 50px;
+			padding-top: 50px;
 		}
 		.b-12 ul{
 			margin-left: -8px;
@@ -1191,7 +1200,7 @@ input:-moz-placeholder {
 				}
 .b-13{
 	height: 515px;
-	border-bottom: 4px solid #ee4300;
+	border-bottom: 4px solid #ff6d20;
 	background-color: #000;
 }
 .b-14{
@@ -1264,6 +1273,7 @@ input:-moz-placeholder {
 			color: #414141;
 			font-family: "robotolight";
 			font-size: 19px;
+			margin-right: 1px;
 		}
 @media screen and (max-width: 1250px){
 	
@@ -1294,12 +1304,11 @@ input:-moz-placeholder {
 				transform: scale(1);
 	}
 .slideRight{
-	-webkit-transition: all 1000ms ease-in-out;
-	   -moz-transition: all 1000ms ease-in-out;
-	    -ms-transition: all 1000ms ease-in-out;
-	   	 -o-transition: all 1000ms ease-in-out;
-			transition: all 1000ms ease-in-out;
-	/*opacity: 0;*/
+	-webkit-transition: all 800ms ease-in-out;
+	   -moz-transition: all 800ms ease-in-out;
+	    -ms-transition: all 800ms ease-in-out;
+	   	 -o-transition: all 800ms ease-in-out;
+			transition: all 800ms ease-in-out;
 	-webkit-transform: translate(100px, 60px);
 	   -moz-transform: translate(100px, 60px);
 	    -ms-transform: translate(100px, 60px);
@@ -1307,6 +1316,25 @@ input:-moz-placeholder {
 			transform: translate(100px, 60px);
 }
 	.slideRight-show{
+		-webkit-transform: translate(0px, 0px);
+		   -moz-transform: translate(0px, 0px);
+		    -ms-transform: translate(0px, 0px);
+		   	 -o-transform: translate(0px, 0px);
+				transform: translate(0px, 0px);
+	}
+.slideDown{
+	-webkit-transition: all 800ms ease-in-out;
+	   -moz-transition: all 800ms ease-in-out;
+	    -ms-transition: all 800ms ease-in-out;
+	   	 -o-transition: all 800ms ease-in-out;
+			transition: all 800ms ease-in-out;
+	-webkit-transform: translate(0px, 100px);
+	   -moz-transform: translate(0px, 100px);
+	    -ms-transform: translate(0px, 100px);
+	   	 -o-transform: translate(0px, 100px);
+			transform: translate(0px, 100px);
+}
+	.slideDown-show{
 		-webkit-transform: translate(0px, 0px);
 		   -moz-transform: translate(0px, 0px);
 		    -ms-transform: translate(0px, 0px);
