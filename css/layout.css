@@ -1277,7 +1277,7 @@ input.error:-moz-placeholder {
 		}
 #b-popup{
 	width: 323px;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 5px;
 	border: 1px solid #888;
 }
@@ -1398,3 +1398,11 @@ input.error:-moz-placeholder {
 		   	 -o-transform: translate(0px, 0px);
 				transform: translate(0px, 0px);
 	}
+.fancybox-skin{
+	-webkit-box-shadow: 0 10px 0px transparent !important;
+  	-moz-box-shadow: 0 10px 0px transparent !important;
+  	box-shadow: 0 10px 0px transparent !important;
+}
+.fancybox-overlay{
+	background: rgba(255,255,255,0.7);
+}
