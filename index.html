@@ -55,7 +55,7 @@
 				</ul>
 			</div>
 			<div class="b-call left">
-				<a href="#" class="b-orange-button fancy" data-block="#b-popup">Заказать звонок</a>
+				<a href="#" class="b-orange-button fancy" data-block="#b-popup-main">Заказать звонок</a>
 			</div>
 		</div>
 	</div>
@@ -600,46 +600,32 @@
 		</div>
 	</div>
 	<div style="display:none;">
-		<!-- <div id="b-popup-1">
-			<div class="for_all b-popup" >
-				<h3>Оставьте заявку</h3>
-				<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
-				<form action="kitsend.php" method="POST" id="b-form-1" data-block="#b-popup-1">
-					<div class="b-popup-form">
-						<label for="name">Введите Ваше имя</label>
-						<input type="text" id="name" name="name" required/>
-						<label for="tel">Введите Ваш номер телефона</label>
-						<input type="text" id="tel" name="phone" required/>
-						<input type="hidden" name="subject" value="Заказ"/>
-						<input type="submit" class="ajax b-orange-butt" value="Заказать">
-					</div>
-				</form>
-			</div>
-		</div> -->
-		<div id="b-popup">
-			<h3>Отправьте заявку<br>и мы свяжемся с вами</h3>
+		<div id="b-popup-main">
+			<div class="b-popup">
+				<h3>Отправьте заявку<br>и мы свяжемся с вами</h3>
 				<form action="kitsend.php" method="POST" id="b-form-4" data-block="#b-popup-2" class="clearfix">
 					<input type="text" class="name left" id="name" name="name" required="" placeholder="Имя">
 					<input type="text" class="phone left" id="phone" name="phone" required="" placeholder="Телефон">
-					<input type="text" class="email left" id="email" name="email" required="" placeholder="Email">
+					<input type="text" class="email left" id="email" name="email" placeholder="Email">
 					<input type="text" class="site left" id="site" name="1" placeholder="Ваш сайт">
 					<input type="hidden" name="1-name" value="Сайт"/>
-					<input type="hidden" name="subject" value="Заказ на расчет"/>
+					<input type="hidden" name="subject" value="Заказ обратного звонка"/>
 					<button class="b-orange-button left ajax">Отправить</button>
 				</form>
+			</div>
 		</div>
 		<div id="b-popup-2">
 			<div class="b-thanks b-popup">
 				<h3>Спасибо!</h3>
 				<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+				<button onclick="$.fancybox.close(); return false;" class="b-orange-button">Закрыть</button>
 			</div>
 		</div>
 		<div id="b-popup-error">
 			<div class="b-thanks b-popup">
 				<h3>Ошибка отправки!</h3>
 				<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
-				<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
+				<button onclick="$.fancybox.close(); return false;" class="b-orange-button">Закрыть</button>
 			</div>
 		</div>
 	</div>
