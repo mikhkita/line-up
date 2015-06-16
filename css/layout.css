@@ -233,6 +233,7 @@ input.error:-moz-placeholder {
 				height: 45px;
 				background-size: 141px;
 				background-image: url("../i/logo-top.png");
+				background-repeat: no-repeat;
 			}
 		.b-0 .b-menu{
 			margin-top: 12px;
@@ -1295,6 +1296,8 @@ input.error:-moz-placeholder {
 	#b-popup form{
 		margin-top: 33px;
 		margin-left: 47px;
+		margin-bottom: 60px;
+		height: 246px;
 	}
 	#b-popup form input[type="text"]{
 		width: 182px;
@@ -1330,7 +1333,7 @@ input.error:-moz-placeholder {
 		padding: 7px 69px;
 		margin-left: 1px;
 		margin-top: 26px;
-		margin-bottom: 60px;
+		
 	}
 @media screen and (max-width: 1250px){
 	
