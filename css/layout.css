@@ -232,7 +232,7 @@ input.error:-moz-placeholder {
 				width: 141px;
 				height: 45px;
 				background-size: 141px;
-				background-image: url("../i/logo.png");
+				background-image: url("../i/logo-top.png");
 			}
 		.b-0 .b-menu{
 			margin-top: 12px;
@@ -1239,7 +1239,7 @@ input.error:-moz-placeholder {
 		display: block;
 		width: 165px;
 		height: 53px;
-		background-image: url("../i/logo.png");
+		background-image: url("../i/logo-top.png");
 		background-position: 50% 50%;
 		background-size: 165px;
 		margin-top: 33px;
