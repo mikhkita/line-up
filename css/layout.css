@@ -1047,9 +1047,9 @@ input.error:-moz-placeholder {
 					border: none;
 					border: 1px solid #7C7C7C;
 					border-radius: 5px;
-					width: 209px;
+					width: 199px;
 					background-repeat: no-repeat;
-					padding: 5px 0px 5px 45px;
+					padding: 5px 10px 5px 45px;
 					margin-bottom: 6px;
 				}
 				.b-10 .b-back .b-ipad form textarea{
@@ -1059,8 +1059,8 @@ input.error:-moz-placeholder {
 					font-size: 17px;
 					border-radius: 5px;
 					border: none;
-					width: 209px;
-					padding-left: 45px;
+					width: 199px;
+					padding: 5px 10px 5px 45px;
 					height: 71px;
 					border: 1px solid #7C7C7C;
 					background-repeat: no-repeat;
