@@ -32,7 +32,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 7000,
     });
 
