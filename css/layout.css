@@ -1028,9 +1028,9 @@ input.error:-moz-placeholder {
 				color: #393939;
 				font-family: "robotolight";
 				font-size: 18px;
-				width: 325px;
-				margin-top: 96px;
-				text-align: left;
+				width: 315px;
+				margin-top: 55px;
+				text-align: justify;
 				margin-left: 66px;
 				line-height: 30px;
 			}
@@ -1133,7 +1133,8 @@ input.error:-moz-placeholder {
 			width: 640px;
 			height: 560px;
 			background-image: url("../i/book-2.png");
-			margin-top: 23px;
+			/*margin-top: 23px;*/
+			margin-top: 135px;
 			margin-left: -85px;
 			background-repeat: no-repeat;
 		}
@@ -1160,9 +1161,9 @@ input.error:-moz-placeholder {
 				.b-11 .b-back ul li p{
 					color: #FFF;
 					font-family: "robotoregular";
-					font-size: 18px;
+					font-size: 16px;
 					width: 247px;
-					text-align: left;
+					text-align: justify;
 					margin-left: 95px;
 					margin-top: 9px;
 					line-height: 23px;
