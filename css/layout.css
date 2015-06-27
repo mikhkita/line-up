@@ -709,26 +709,33 @@ input.error:-moz-placeholder {
 						margin-left: 31px;
 						margin-top: 39px;
 					}
-					.b-5 .b-back .b-slider .b-slider-describe div:first-child {
-						width: 525px;
+					.b-5 .b-back .b-slider .b-slider-describe .title-1 {
+						width: 403px;
 						color: #4D4D4D;
   						font-family: "robotoregular";
   						font-size: 12px;
   						text-transform: uppercase;
-  						margin-right: 27px;
-					
-						text-align: right;
-						padding: 31px 68px 24px;
+						padding: 31px 0px 24px;
 						box-sizing: border-box;
 						border-bottom: 1px solid #f0f0f0;
-}
+					}
+					.b-5 .b-back .b-slider .b-slider-describe .title-2 {
+						width: 74px;
+						color: #4D4D4D;
+  						font-family: "robotoregular";
+  						font-size: 12px;
+  						text-transform: uppercase;
+						padding: 31px 0px 24px;
+						box-sizing: border-box;
+						border-bottom: 1px solid #f0f0f0;
+					}
 					.b-5 .b-back .b-slider .b-slider-describe .was{
 						color: #404040;
 						font-family: "robotoregular";
 						font-size: 20px;
 						text-transform: uppercase;
 						margin-top: 45px;
-						margin-left: 22px;
+						margin-left: 100px;
 					}
 					.b-5 .b-back .b-slider .b-slider-describe .arrow{
 						width: 37px;
